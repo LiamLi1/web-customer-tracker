@@ -28,6 +28,9 @@
 	
 		<form:form action="saveCustomer" modelAttribute="customer" method="POST">
 		
+			<!-- need to associate this data with customer id. So it can perform save and update -->
+			<form:hidden path="id"/>
+			
 			<table>
 				<tbody>
 					<tr>
